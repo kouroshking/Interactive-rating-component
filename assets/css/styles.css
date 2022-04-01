@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --bg-color: #141519;
+  --card-bg-color-one: #262a32;
+  --card-bg-color-two: #171d27;
+  --primary-color: #fc7613;
+  --text-color: #808791;
+  --bg-secondary-color: #272d38;
+  --bg-hover-color: #7c8697;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rating-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.rating-card.hide {
+  display: none;
+}
+
+.rating-card__inner {
+  background: radial-gradient(circle at top, var(--card-bg-color-one), var(--card-bg-color-two));
+  width: 450px;
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.rating-card__inner > * {
+  margin: 1rem 0;
+}
+
+.rating-card__inner > *:first-child {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.rating-card__inner > *:last-child {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.rating-card__star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rating-card__title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.rating-card__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-card__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.rating-card__option:hover {
+  background-color: var(--bg-hover-color);
+  color: #fff;
+}
+
+.rating-card__option.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.rating-card__btn {
+  width: 100%;
+  padding: .7rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.rating-card__btn:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.thanking-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.thanking-card.hide {
+  display: none;
+}
+
+.thanking-card__inner {
+  background: radial-gradient(circle at top, var(--card-bg-color-one), var(--card-bg-color-two));
+  width: 450px;
+  border-radius: 20px;
+  padding: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanking-card__inner > * {
+  margin: 1rem 0;
+}
+
+.thanking-card__inner > *:first-child {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.thanking-card__inner > *:last-child {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.thanking-card__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanking-card__title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.thanking-card__message {
+  display: block;
+  background: var(--bg-secondary-color);
+  padding: .5rem 1rem;
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.attribution {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .rating-card__inner {
+    width: 100%;
+  }
+  .thanking-card__inner {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

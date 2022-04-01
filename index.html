@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="main">
+
+      <div id="rating-card" class="rating-card">        
+          <div class="rating-card__inner">
+            <div class="rating-card__star">
+              <img class="rating-card__star-image" src="images/icon-star.svg"/>              
+            </div>
+            <h2 class="rating-card__title">How did we do?</h2>
+            <p class="rating-card__description">
+              Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="rating-card__options">
+              <div class="rating-card__option" data-value="1">
+                <span>1</span>
+              </div>
+              <div class="rating-card__option" data-value="2">
+                <span>2</span>
+              </div>
+              <div class="rating-card__option" data-value="3">
+                <span>3</span>
+              </div>
+              <div class="rating-card__option" data-value="4">
+                <span>4</span>
+              </div>
+              <div class="rating-card__option" data-value="5">
+                <span>5</span>
+              </div>
+            </div>
+            <button class="rating-card__btn">Submit</button>
+          </div>
+        </div>
+
+
+         <div id="thanking-card" class="thanking-card hide"> 
+             
+          <div class="thanking-card__inner">
+            <div class="thanking-card__image">
+              <img  src="images/illustration-thank-you.svg"/>              
+            </div>
+            <div class="thanking-card__message"><span></span></div>
+            <h2 class="thanking-card__title">Thank you!</h2>
+            <p class="thanking-card__description">
+              We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+            </p>            
+          </div>
+        </div>
+      
+    </div>
+    
+    
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by  <a href="https://github.com/kouroshking">Kourosh Damercheli</a>.
+      </p>
+    </div>
+
+    </div>
+
+
+  
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
